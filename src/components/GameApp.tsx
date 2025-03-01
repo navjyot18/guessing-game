@@ -10,7 +10,7 @@ export const GameApp = () => {
   };
   return (
     <>
-      {!isGameStarted ? (
+      {isGameStarted ? (
         <GameScreen />
       ) : (
         <Usercreds handleGameStart={handleGameStart} />
