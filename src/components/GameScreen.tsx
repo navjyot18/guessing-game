@@ -119,7 +119,7 @@ export const GameScreen: React.FC = () => {
               }
             </Text>
             {options.map((each) => (
-              <div id={each.id.toString()}>
+              <div key={each.id} id={each.id.toString()}>
                 <Button
                   style={{
                     width: "100%",
