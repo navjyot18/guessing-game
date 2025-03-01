@@ -1,12 +1,11 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import FetchGuessGameData from "./components/Addcities";
+import { GameApp } from "./components/GameApp";
 
 function App() {
   return (
     <div className="App">
-      <FetchGuessGameData />
+      <GameApp />
     </div>
   );
 }
