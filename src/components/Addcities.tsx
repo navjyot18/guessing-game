@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { addDoc, collection, getDocs } from "firebase/firestore";
 import { db } from "../firebaseConfig"; // Ensure Firebase is properly initialized
-import { guessGameData } from "./guess_game_data";
 
 const FetchGuessGameData = () => {
   const [documents, setDocuments] = useState<any[]>([]);
