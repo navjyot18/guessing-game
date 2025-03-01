@@ -1,46 +1,92 @@
-# Getting Started with Create React App
+# 🌍 Guessing Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A fun and interactive guessing game where users enter a username to start playing. Players guess locations based on clues, and when they guess correctly, confetti appears, and their score increases. Players can share their game link via WhatsApp, allowing others to join and compare scores.
 
-## Available Scripts
+## 🚀 Features
+- **Username Input:** Users enter a username to begin the game.
+- **Guessing Mechanism:** Players guess locations based on provided clues.
+- **Score Tracking:** Score increases when a correct guess is made.
+- **Confetti Celebration:** Displays confetti animation on correct guesses.
+- **Game Sharing:** Users can share their game link via WhatsApp.
+- **Leaderboard:** Invited players can see the scores of those who invited them.
 
-In the project directory, you can run:
+## 🛠️ Tech Stack
+- **Frontend:** React (SPA - Single Page Application)
+- **UI Components:** Radix UI (for built-in accessible components)
+- **Confetti:** Used for visual celebration of correct answers
+- **State Management:** React Hooks
+- **Testing:** React Testing Library
+- **Backend:** Firebase (Firestore for storing city, country, facts & clues)
+- **Deployment:** Firebase Hosting
 
-### `npm start`
+## 📂 Project Structure
+```
+📦 guessing-game
+├── 📁 src
+│   ├── 📁 components  # React UI Components
+│   ├── 📁 repo        # Services handling game logic
+│   ├── 📁 constants   # Constant values for the game
+│   ├── App.tsx       # Main App component
+│   ├── firebaseConfig.js # Firebase setup
+│   ├── index.tsx     # Entry point
+├── 📁 public         # Static assets
+├── .gitignore        # Git ignored files (including .env)
+├── package.json      # Project dependencies
+├── README.md         # Project documentation
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🏗️ Setup & Installation
+### 1️⃣ Clone the Repository
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+### 2️⃣ Install Dependencies
+```sh
+ npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 3️⃣ Set Up Environment Variables
+Create a `.env` file in the project root and add:
+```
+REACT_APP_FIREBASE_API_KEY=your_api_key
+REACT_APP_FIREBASE_AUTH_DOMAIN=your_auth_domain
+REACT_APP_FIREBASE_PROJECT_ID=your_project_id
+REACT_APP_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+REACT_APP_FIREBASE_APP_ID=your_app_id
+```
 
-### `npm run build`
+### 4️⃣ Run the Development Server
+```sh
+ npm run start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 5️⃣ Run Tests
+```sh
+ npm test
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Deployment
+### Firebase Hosting Deployment
+1. Build the project:
+   ```sh
+   npm run build
+   ```
+2. Deploy to Firebase:
+   ```sh
+   firebase deploy
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🎯 Future Enhancements
+- Add more animations & sound effects.
+- Improve game logic with timed challenges.
+- Implement authentication for personalized leaderboards.
 
-### `npm run eject`
+## 🤝 Contribution
+Feel free to fork the repository, submit issues, or create pull requests to enhance the game!
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 🛡️ License
+Navjyot Bhele
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
+### 🎮 Have fun guessing and competing with friends! 🎉
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
