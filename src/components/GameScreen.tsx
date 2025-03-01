@@ -88,7 +88,9 @@ export const GameScreen: React.FC = () => {
   };
   return (
     <div className="flex-center bg-gradient" style={{ height: "100vh" }}>
-      {answered && currentQuestion?.id === selectedOption?.id && <Confetti />}
+      {answered && currentQuestion?.id === selectedOption?.id && (
+        <Confetti height={window.innerHeight} width={window.innerWidth} />
+      )}
       {popupOpen && (
         <Sharepopup
           shareLink={shareLink}
