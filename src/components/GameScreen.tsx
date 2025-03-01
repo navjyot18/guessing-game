@@ -110,12 +110,7 @@ export const GameScreen: React.FC = () => {
           <Heading style={{ width: "100%", color: "#0f172a" }} size="6">
             Guess the Destination! 🌍
           </Heading>
-          <Flex
-            direction={"column"}
-            gap={"4"}
-            maxWidth={"550px"}
-            minWidth={"550px"}
-          >
+          <Flex direction={"column"} gap={"4"} className="game_container">
             <Text align={"center"} size="3" weight="bold" color="gray" mt={"3"}>
               {
                 currentQuestion?.clues[
